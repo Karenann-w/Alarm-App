@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alarm Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+
+        input[type="time"] {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #alarmStatus {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alarm Web App</h1>
+
+    <label for="alarmTime">Set Alarm Time:</label>
+    <input type="time" id="alarmTime">
+
+    <button onclick="setAlarm()">Set Alarm</button>
+
+    <h2 id="alarmStatus"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
